@@ -1,0 +1,369 @@
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+/* common styles or utilities */
+body {
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.meroon-btn {
+    background-color: #e02c6d;
+    padding: 15px 24px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.small-text {
+    color: grey;
+    font-size: 16px;
+    line-height: 23px;
+}
+hr {
+    border: 1px dashed gray;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+/* header part */
+header {
+    background-color: #2d25a0;
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.text-button {
+    padding-top: 55px;
+    padding-left: 130px;
+}
+.header-text {
+    color: white;
+    font-weight: 700;
+    font-size: 64px;
+}
+.container img {
+    width: 80%;
+    /* height: 438px; */
+    /* padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 89px; */
+}
+.header:hover .header-img {
+    transform: scale(1.1);
+    transition: transform 3s;
+    cursor: pointer;
+}
+.header:hover .meroon-btn {
+    box-shadow: 10px 5px 40px rgb(216, 74, 185);
+    transition: box-shadow 3s;
+    cursor: pointer;
+}
+
+/* body part */
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 25px;
+    grid-column-gap: 25px;
+    padding-left: 80px;
+    margin-bottom: 130px;
+}
+.player {
+    /* width: 330px;
+    height: 480px; */
+    width: 90%;
+    box-shadow: 10px 10px 50px lightgray;
+    border-radius: 5px;
+    padding: 25px;
+    border-radius: 5%;
+}
+.player img {
+    /* width: 300px;
+    height: 230px; */
+    width: 100%;
+    border-radius: 5%;
+    /* padding-top: 20px; */
+}
+.player h3 {
+    font-weight: bold;
+    font-size: 28px;
+}
+.player p {
+    padding-right: 10px;
+}
+
+/* highlights part */
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 80px;
+    padding-left: 80px;
+    padding-right: 70px;
+    padding-bottom: 150px;
+}
+.highlights-text {
+    padding-top: 60px;
+}
+.highlights-text h2 {
+    font-weight: bold;
+    font-size: 48px;
+}
+.highlight-img img {
+    width: 550px;
+    height: 480px;
+}
+
+/* fieldset */
+.fieldset-area h1 {
+    padding-left: 400px;
+    font-size: 35px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+fieldset {
+    margin-bottom: 110px;
+    background-image: url(images/copaAmerica.jpg);
+    width: 45%;
+    height: 260px;
+    margin-left: 400px;
+    border: none;
+}
+legend {
+    background-color: gray;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+.fieldset {
+    padding-bottom: 30px;
+}
+.fieldset p {
+    font-size: 25px;
+    font-weight: 450;
+    color: white;
+}
+.fieldset-btn {
+    background-color: ghostwhite;
+    padding: 10px 35px;
+    border-radius: 5px;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* subscribe */
+.subscribe {
+    background-image: url(images/team.jpg);
+    background-size: cover;
+    height: 320px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.transbox {
+    background-color: #ffffff;
+    opacity: 0.6;
+}
+.subscribe-text {
+    padding-left: 400px;
+    padding-right: 400px;
+    color: black;
+}
+.subscribe-text h4 {
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.subscribe-text h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+.subscribe-text h5 {
+    line-height: 26px;
+}
+.button-area {
+    padding-left: 399px;
+    padding-bottom: 20px;
+}
+.subscribe-mail {
+    padding: 15px 75px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+.subscribe-btn {
+    background-color: white;
+    padding: 10px 24px;
+    border-radius: 5px;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+.subscribe-btn:hover {
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20pxs;
+}
+footer img {
+    width: 483px;
+    height: 110px;
+}
+.icons {
+    display: flex;
+}
+.fab {
+    color: rgb(104, 99, 99);
+    width: 45px;
+    height: 35px;
+    background-color: rgb(224, 212, 212);
+    border-radius: 25px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    margin-right: 20px;
+    font-size: 30px;
+}
+
+/* media-queries */
+
+/* mobile devices */
+@media only screen and (max-width: 968px) {
+    .header,
+    main {
+        width: 100%;
+    }
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player,
+    .highlights,
+    .header,
+    .fieldset-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .highlight-img {
+        padding-top: 15px;
+        margin-bottom: 0;
+    }
+}
+@media only screen and (max-width: 480px) {
+    header {
+        width: 225%;
+    }
+    main {
+        width: 180%;
+    }
+    .container {
+        width: 100%;
+    }
+    .players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player {
+        width: 100%;
+    }
+    .container img {
+        width: 90%;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .header-text {
+        color: white;
+        font-weight: 900;
+        font-size: 54px;
+    }
+
+    .text-button {
+        padding: 5% 0% 5% 5%;
+    }
+
+    .subscribe-text {
+        padding-left: 59px;
+        padding-right: 27px;
+        align-items: center;
+        justify-content: center;
+        color: black;
+    }
+
+    .button-area {
+        padding-left: 53px;
+        padding-bottom: 47px;
+        display: flex;
+    }
+
+    /* .player, */
+    .highlights,
+    /* .header, */
+    .fieldset-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .highlight-img {
+        align-items: center;
+        width: 100%;
+        padding-top: 15px;
+        margin-bottom: 0;
+    }
+    fieldset {
+        margin-bottom: 110px;
+        background-image: url(images/copaAmerica.jpg);
+        width: 165%;
+        border: none;
+    }
+
+    .subscribe {
+        background-image: url(images/team.jpg);
+        background-size: cover;
+        width: 125%;
+        margin-bottom: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .fieldset-area h1 {
+        /* padding-left: 400px; */
+        width: 100%;
+        font-size: 35px;
+        font-weight: 800;
+        padding-bottom: 20px;
+    }
+    
+    footer {
+        width: 100%;
+        margin-left: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
